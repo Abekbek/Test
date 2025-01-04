@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #87CEFA;
+    color: #191970;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: "Sofia", sans-serif;
+    text-shadow: 3px 3px 3px #f4f4f4;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+nav a {
+    color: #333;
+    margin: 0 15px;
+    text-decoration: none;
+    position: relative;
+}
+
+/* Styling ikon keranjang agar selalu berada di kanan bawah */
+#cart-button {
+    position: fixed;
+    bottom: 20px; /* Jarak dari bawah */
+    right: 20px;  /* Jarak dari kanan */
+    background-color: #87CEFA;
+    color: #333;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 1px 1px 1px #333;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#cart-button:hover {
+    background-color: #5dc1ff;
+}
+
+.cart-icon {
+    width: 24px;
+    margin-right: 10px;
+}
+
+
+.catalog {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: calc(33.333% - 30px);
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+.cart {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cart ul {
+    list-style-type: none;
+}
+
+.cart ul li {
+    margin: 5px 0;
+}
+
+/* Responsive untuk logo dan navigasi */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+}

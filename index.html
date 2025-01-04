@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BekBB</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Toko" class="logo">
+            <h1>Baranangsiang Boutique</h1>
+        </div>
+        <nav>
+            <a href="#">Beranda</a>
+            <a href="#">Katalog</a>
+            <a href="#" id="cart-button">
+                <img src="keranjang.png" alt="Keranjang" class="cart-icon">
+                (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <section class="catalog">
+        <h2>Katalog Baju</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="bj1.jpg" alt="bjs">
+                <h3>Kaos Polos Hitam</h3>
+                <p>Rp. 71.000</p>
+                <button class="add-to-cart" data-name="Kaos Polos Hitam" data-price="71.000">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="bj2.jpg" alt="bjs">
+                <h3>Kaos Meme</h3>
+                <p>Rp. 89.000</p>
+                <button class="add-to-cart" data-name="Kaos Meme" data-price="89.000">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="bj3.jpg" alt="bjs">
+                <h3>Kaos Center</h3>
+                <p>Rp. 69.000</p>
+                <button class="add-to-cart" data-name="Kaos Center" data-price="69.000">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="bj4.jpg" alt="bjs">
+                <h3>Batik Barsi</h3>
+                <p>Rp. 109.000</p>
+                <button class="add-to-cart" data-name="Batik Barsi" data-price="109.000">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="bj5.jpg" alt="bjs">
+                <h3>Kaos OP Barsi</h3>
+                <p>Rp. 77.000</p>
+                <button class="add-to-cart" data-name="Kaos OP Barsi" data-price="77.000">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="bj6.jpg" alt="bjs">
+                <h3>Kaos BRS EXO-2</h3>
+                <p>Rp. 99.000</p>
+                <button class="add-to-cart" data-name="Kaos BRS EXO-2" data-price="99.000">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="bj7.jpg" alt="bjs">
+                <h3>Kaos Blank</h3>
+                <p>Rp. 55.000</p>
+                <button class="add-to-cart" data-name="Kaos Blng" data-price="55.000">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="bj8.jpg" alt="bjs">
+                <h3>Kaos POP</h3>
+                <p>Rp. 87.000</p>
+                <button class="add-to-cart" data-name="Kaos Czz" data-price="87.000">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <img src="bj9.jpg" alt="bjs">
+                <h3>Kemeja Beach BRS</h3>
+                <p>Rp. 84.000</p>
+                <button class="add-to-cart" data-name="Kemeja Beach BRS" data-price="84.000">Tambah ke Keranjang</button>
+            </div>
+            <!-- Tambah produk lainnya di sini -->
+        </div>
+    </section>
+
+    <section class="cart" id="cart-section" style="display: none;">
+        <h2>Keranjang Belanja</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: Rp. <span id="total-price">0</span></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
